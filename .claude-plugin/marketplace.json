@@ -2063,6 +2063,15 @@
       "author": {
         "name": "Klotzkette"
       }
+    },
+    {
+      "name": "pdf-formular-ausfueller",
+      "source": "./pdf-formular-ausfueller",
+      "description": "Füllt PDF-Formulare automatisch mit hinterlegten Stammdaten aus Profilen und Notion aus. Unterschriften werden als hinterlegte Bilddateien eingesetzt. Das ausgefüllte PDF wird zur Sichtung zurückgegeben.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Klotzkette"
+      }
     }
   ],
   "version": "383.0.0"

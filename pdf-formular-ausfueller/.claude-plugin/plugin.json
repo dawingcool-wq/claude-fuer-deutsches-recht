@@ -1,0 +1,19 @@
+{
+  "name": "pdf-formular-ausfueller",
+  "version": "1.0.0",
+  "description": "Füllt PDF-Formulare automatisch mit hinterlegten Stammdaten aus Profilen und Notion aus. Unterschriften werden als hinterlegte Bilddateien eingesetzt. Das ausgefüllte PDF wird zur Sichtung zurückgegeben.",
+  "license": "Apache-2.0 OR MIT",
+  "author": {
+    "name": "Klotzkette"
+  },
+  "homepage": "https://github.com/Klotzkette/claude-fuer-deutsches-recht",
+  "keywords": [
+    "pdf",
+    "formular",
+    "ausfuellen",
+    "unterschrift",
+    "stammdaten",
+    "notion",
+    "automatisierung"
+  ]
+}
