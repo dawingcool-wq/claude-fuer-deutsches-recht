@@ -1,80 +1,27 @@
-# Stammdaten-Profil
+# Stammdaten — Übersicht
 
-*Diese Datei enthält die persönlichen und geschäftlichen Daten, die beim automatischen Ausfüllen von PDF-Formularen verwendet werden. Felder mit `[…]` sind Platzhalter — bitte mit den echten Daten befüllen.*
+Dieses Verzeichnis enthält die hinterlegten Profile für das automatische Ausfüllen von PDF-Formularen.
 
-## 1 Persönliche Daten
+## Verfügbare Profile
 
-**Anrede:** [Herr / Frau / divers / ohne]
-**Titel:** [z. B. Dr., Prof. Dr., RA, oder leer]
-**Vorname:** [Vorname]
-**Nachname:** [Nachname]
-**Geburtsdatum:** [TT.MM.JJJJ]
-**Geburtsort:** [Ort]
-**Staatsangehörigkeit:** [z. B. deutsch]
-**Familienstand:** [ledig / verheiratet / geschieden / verwitwet]
+| Kürzel | Datei | Beschreibung |
+|--------|-------|--------------|
+| **Daniel** | `daniel.md` | Persönliche Daten Daniel |
+| **Fabian** | `fabian.md` | Persönliche Daten Fabian |
+| **Firma** | `firma.md` | Firmendaten (Kanzlei / Unternehmen) |
 
-## 2 Kontaktdaten
+## Wie die Zuordnung funktioniert
 
-**Straße und Hausnummer:** [Straße Nr.]
-**PLZ:** [PLZ]
-**Ort:** [Ort]
-**Bundesland:** [Bundesland]
-**Land:** [z. B. Deutschland]
-**Telefon (privat):** [+49 …]
-**Telefon (mobil):** [+49 …]
-**E-Mail (privat):** [E-Mail]
+Der Skill erkennt automatisch, für wen das Formular ist:
 
-## 3 Berufliche Daten
+1. **Explizite Nennung** — „Füll das für Daniel aus" oder „Das ist für die Firma".
+2. **Kontexterkennung** — ein Gewerbeanmeldeformular mit Daniels Adresse im Gespräch wird Daniel zugeordnet; ein Handelsregister-Antrag der Firma.
+3. **Rückfrage** — wenn unklar, fragt der Skill: „Für wen soll ich das ausfüllen — Daniel, Fabian oder die Firma?"
 
-**Berufsbezeichnung:** [z. B. Rechtsanwalt, Geschäftsführer]
-**Arbeitgeber / Kanzlei / Unternehmen:** [Name]
-**Position / Funktion:** [z. B. Partner, angestellter Rechtsanwalt, Geschäftsführer]
-**E-Mail (geschäftlich):** [E-Mail]
-**Telefon (geschäftlich):** [+49 …]
-**Geschäftsadresse (falls abweichend):** [Straße Nr., PLZ Ort]
+## Neues Profil anlegen
 
-## 4 Steuer- und Finanzdaten
+Eine neue `.md`-Datei nach dem Muster der bestehenden Profile anlegen und hier in der Tabelle ergänzen.
 
-**Steuer-ID:** [IdNr.]
-**Steuernummer:** [Steuernummer des Finanzamts]
-**Finanzamt:** [zuständiges Finanzamt]
-**USt-IdNr.:** [DE…, falls vorhanden]
-**IBAN:** [DE…]
-**BIC:** [z. B. COBADEFFXXX]
-**Kontoinhaber:** [Name]
-**Bank:** [Name der Bank]
+## Unterschriften
 
-## 5 Ausweisdaten
-
-**Personalausweis-Nr.:** [Nr.]
-**Ausstellungsdatum:** [TT.MM.JJJJ]
-**Gültig bis:** [TT.MM.JJJJ]
-**Ausstellende Behörde:** [z. B. Stadt Köln]
-**Reisepass-Nr.:** [Nr., falls vorhanden]
-
-## 6 Versicherungsdaten
-
-**Krankenversicherung:** [Name der Kasse / des Versicherers]
-**Versicherungsnummer:** [Nr.]
-**Sozialversicherungsnummer:** [Nr.]
-
-## 7 Kanzlei- / Unternehmensdaten (für Firmenstempel und Briefkopf)
-
-**Firma / Kanzleiname:** [Name]
-**Rechtsform:** [z. B. PartGmbB, GmbH, Einzelkanzlei]
-**Handelsregister:** [z. B. AG Köln, HRB 12345, oder: nicht eingetragen]
-**Umsatzsteuer-IdNr. (Firma):** [DE…]
-**Website:** [URL]
-
-## 8 Unterschriften
-
-Unterschriftdateien werden im Ordner `stammdaten/unterschriften/` hinterlegt.
-
-**Dateiname der Hauptunterschrift:** [z. B. unterschrift-nachname.png]
-**Dateiname des Firmenstempels:** [z. B. stempel-kanzlei.png, falls vorhanden]
-
-Empfohlenes Format: PNG mit transparentem Hintergrund, mindestens 600 px breit, schwarze Tinte.
-
----
-
-*Hinweis: Diese Datei kann sensible personenbezogene Daten enthalten. Sie sollte nicht in öffentliche Repositories gepusht werden. Nutzen Sie `.gitignore` oder verschlüsselte Speicherung, wenn das Repository geteilt wird.*
+Unterschrift-Dateien liegen unter `unterschriften/` — pro Person eine PNG-Datei (transparenter Hintergrund, schwarze Tinte, mind. 600 px breit). Der Dateiname wird im jeweiligen Profil referenziert.
