@@ -1,6 +1,8 @@
-# Sensible Stammdaten und Unterschriften nie ins öffentliche Repo pushen.
-# Die Dateien werden lokal oder in einem privaten Speicher vorgehalten.
-stammdaten/profil-live.md
+# Sensible Live-Daten und Unterschriften nie ins öffentliche Repo pushen.
+# Die Template-Dateien (daniel.md, fabian.md, firma.md) werden committet,
+# damit die Struktur sichtbar bleibt. Echte Daten kommen in *-live.md Varianten
+# oder werden direkt in die Templates geschrieben und lokal gehalten.
+stammdaten/*-live.md
 stammdaten/unterschriften/*.png
 stammdaten/unterschriften/*.jpg
 stammdaten/unterschriften/*.pdf
