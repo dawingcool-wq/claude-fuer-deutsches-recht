@@ -1,0 +1,6 @@
+# Sensible Stammdaten und Unterschriften nie ins öffentliche Repo pushen.
+# Die Dateien werden lokal oder in einem privaten Speicher vorgehalten.
+stammdaten/profil-live.md
+stammdaten/unterschriften/*.png
+stammdaten/unterschriften/*.jpg
+stammdaten/unterschriften/*.pdf
